@@ -105,7 +105,9 @@ public class WateringCan : MonoBehaviour
 
         #region Public Methods
 
-        
+        public void HandleRefill(){
+            
+        }
 
         #endregion
 }

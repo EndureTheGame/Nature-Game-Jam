@@ -69,6 +69,9 @@ public class GameManager : MonoBehaviour
 
         #region Public Methods
 
+        public void GameOver() {
+            
+        }
 
 
         #endregion
