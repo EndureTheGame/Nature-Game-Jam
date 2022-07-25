@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seedType: Leaf
   seedPrefab: {fileID: 6277302657267836817, guid: ca80a64f6c1444e439955e2628d67ccc, type: 3}
-  clipSize: 5
-  ammo: 0
+  ammo: 5

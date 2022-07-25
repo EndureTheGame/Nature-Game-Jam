@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
         #region Variables
 
         [Header("UI Variable Fields - Player")]
-        [SerializeField] TMP_Text seedClip;
         [SerializeField] TMP_Text seedStash;
         [SerializeField] Image waterAmmo;
 
@@ -54,7 +53,6 @@ public class GameManager : MonoBehaviour
 
 
         private void HandleSeedAmmo() {
-            seedClip.text = wateringCan.currentSeedData.GetClip().ToString();
             seedStash.text = wateringCan.currentSeedData.GetStash().ToString();
         }
 

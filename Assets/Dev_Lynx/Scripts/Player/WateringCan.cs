@@ -47,7 +47,6 @@ public class WateringCan : MonoBehaviour
 
         void Update() {
             HandleShooting();
-            HandleReload();
             currentWater = Mathf.Clamp(currentWater, 0, maxWater);
         }
 
@@ -75,13 +74,6 @@ public class WateringCan : MonoBehaviour
                 //Debug.Log("Firing seed!");
             }         
     }
-
-        private void HandleReload() {
-            if(Input.GetKeyDown(KeyCode.X)) {
-                ReloadSeed();
-            }
-        }
-
         private bool canShootWater() {
             return currentWater >= (maxWater / waterProjectileSetAmount);
         }
@@ -107,10 +99,6 @@ public class WateringCan : MonoBehaviour
         private void EquipSeed(int s_index) {      
             currentSeed = s_index;
             currentSeedData = seeds[currentSeed];
-        }
-
-        private void ReloadSeed() {
-            currentSeedData.Reload();
         }
 
         #endregion
