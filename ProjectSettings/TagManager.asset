@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Wall
-  - JumpPad
-  - Ground
+  - Growth Surface
+  - Key
+  - Heart
   layers:
   - Default
   - TransparentFX
@@ -15,10 +15,10 @@ TagManager:
   - Water
   - UI
   - Ground
-  - Wall
-  - player
   - 
   - 
+  - Rock
+  - Dirt
   - 
   - 
   - 
