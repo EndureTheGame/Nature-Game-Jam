@@ -105,9 +105,13 @@ public class WateringCan : MonoBehaviour
 
         #region Public Methods
 
-        public void HandleRefill(){
-            
+        public void HandleRefill()
+        {
+        if (currentWater < maxWater)
+        {
+            currentWater += waterProjectileSetAmount;
         }
+    }
 
         #endregion
 }
