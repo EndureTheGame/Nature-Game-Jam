@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlameBall : MonoBehaviour
 {
     
-    public int damamge = 50;
+    public int damamge = 25;
     private DamageSystem damageSystem;
     public GameObject player;
     public float TimeLeft = 50;
@@ -28,7 +28,7 @@ public class FlameBall : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            collision.gameObject.GetComponent<DamageSystem>().TakeDamage(damamge);
+            collision.gameObject.GetComponent<DamageSystem>().TakeDamage(25);
         }
         else 
         { 

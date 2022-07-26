@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 638650356250733971}
   - component: {fileID: 638650356250733969}
   - component: {fileID: 1989391827}
+  - component: {fileID: 5314012551420727394}
   m_Layer: 0
   m_Name: Player [RB]
   m_TagString: Player
@@ -133,6 +134,19 @@ MonoBehaviour:
   interactionDistance: 2
   cam: {fileID: 638650358326363957}
   interactionText: {fileID: 0}
+--- !u!114 &5314012551420727394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638650356250733968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f71e1e158ff4f34399baca5f053f73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
 --- !u!1 &638650356686550788
 GameObject:
   m_ObjectHideFlags: 0

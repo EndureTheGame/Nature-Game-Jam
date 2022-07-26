@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -67,14 +68,27 @@ public class GameManager : MonoBehaviour
 
         #endregion
 
-        #region Public Methods
+        #region Game State
 
-        public void GameOver() {
-            
+        bool gameHasEnded = false;
+
+        public void GameOver()
+        {
+            if (gameHasEnded == false)
+            {
+                gameHasEnded = true;
+                Debug.Log("Game Over!");
+
+                Restart();
+            }
+
         }
 
+        void Restart()
+        {
+            SceneManager.LoadScene("GameOver");
+        }
 
         #endregion
-        
-    
+
 }
