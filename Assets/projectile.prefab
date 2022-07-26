@@ -129,4 +129,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damamge: 50
   player: {fileID: 638650356250733968, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
-  TimeLeft: 50
+  TimeLeft: 100
