@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3321469079036861234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BarrelPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,8 @@ GameObject:
   - component: {fileID: 638650356250733969}
   - component: {fileID: 1989391827}
   - component: {fileID: 5314012551420727394}
-  m_Layer: 0
+  - component: {fileID: 227438133}
+  m_Layer: 7
   m_Name: Player [RB]
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -118,7 +119,7 @@ MonoBehaviour:
   groundCheck: {fileID: 638650358253737470}
   ground:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 2147483647
 --- !u!114 &1989391827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +148,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+--- !u!114 &227438133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638650356250733968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6296fa8a03f8eb4aae85bd43b5cafb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  heartImage: {fileID: 21300000, guid: 6d4bea96257172445b8c504a8e5aaaf8, type: 3}
+  emptyImage: {fileID: 21300000, guid: 728064b2d146da24db7e2187295ae8e4, type: 3}
 --- !u!1 &638650356686550788
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +178,7 @@ GameObject:
   - component: {fileID: 638650356686550784}
   - component: {fileID: 638650356686550791}
   - component: {fileID: 638650356686550790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638650357027745299}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +309,7 @@ GameObject:
   - component: {fileID: 638650357188735461}
   - component: {fileID: 638650357188735460}
   - component: {fileID: 638650357188735003}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638650357446403870}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Misc.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638650358253737471}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +470,7 @@ GameObject:
   - component: {fileID: 638650358326363956}
   - component: {fileID: 638650358326363947}
   - component: {fileID: 638650358326363946}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 189746173772429164}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ItemHolder [WateringCan]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,6 +686,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 290cbb7d73d55cf4cafc37987929d4e7, type: 3}
       propertyPath: m_Name
       value: WateringCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 290cbb7d73d55cf4cafc37987929d4e7, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 290cbb7d73d55cf4cafc37987929d4e7, type: 3}

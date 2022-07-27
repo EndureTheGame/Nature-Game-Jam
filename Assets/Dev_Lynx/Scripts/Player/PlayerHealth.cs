@@ -8,10 +8,8 @@ public class PlayerHealth : MonoBehaviour
 
         [Header("Player Health Variable Fields")]
         [SerializeField] Image[] hearts;
-        [SerializeField] Sprite heartFill;
-        [SerializeField] Sprite heartEmpty;
-
-        int maxHealth = 3;
+        [SerializeField] Sprite heartImage;
+        public int maxHealth = 3;
 
 
         #endregion
@@ -20,11 +18,13 @@ public class PlayerHealth : MonoBehaviour
 
         void Update() {
             foreach(Image img in hearts) {
-                img.sprite = heartEmpty;
+                img.sprite = null;
+                img.color = Color.clear;
             }
 
             for(int i = 0; i < maxHealth; i++) {
-                hearts[i].sprite = heartFill;
+                hearts[i].sprite = heartImage;
+                hearts[i].color = Color.white;
             }
         }
 
