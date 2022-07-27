@@ -26,6 +26,8 @@ public class PlayerHealth : MonoBehaviour
                 hearts[i].sprite = heartImage;
                 hearts[i].color = Color.white;
             }
+
+            
         }
 
         #endregion
@@ -41,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
             maxHealth -= 1;
 
             if(maxHealth == 0) {
-                //OnPlayerDeath;
+                FindObjectOfType<GameManager>().GameOver();
             }
         }
 
