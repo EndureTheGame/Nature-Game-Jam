@@ -243,29 +243,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3769010120839469340, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
   m_PrefabInstance: {fileID: 165594680}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &227438127 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 638650356250733968, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
-  m_PrefabInstance: {fileID: 1097620830}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &227438133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227438127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6296fa8a03f8eb4aae85bd43b5cafb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 3973694377405248842}
-  - {fileID: 3973694377405248841}
-  - {fileID: 3973694377405248840}
-  heartFill: {fileID: 0}
-  heartEmpty: {fileID: 0}
 --- !u!4 &227438138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 638650356250733970, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
@@ -712,6 +689,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 227438133, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
+      propertyPath: heartImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 728064b2d146da24db7e2187295ae8e4, type: 3}
+    - target: {fileID: 227438133, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 3973694377405248842}
+    - target: {fileID: 227438133, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 3973694377405248841}
+    - target: {fileID: 227438133, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 3973694377405248840}
     - target: {fileID: 1989391827, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
       propertyPath: interactionText
       value: 
@@ -820,6 +813,14 @@ PrefabInstance:
     - target: {fileID: 1570174590422160907, guid: 6a1aa74e1607a484eb72539b1ef7e814, type: 3}
       propertyPath: m_Name
       value: Level01_RockWall03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570174590422160907, guid: 6a1aa74e1607a484eb72539b1ef7e814, type: 3}
+      propertyPath: m_TagString
+      value: Growth Surface
+      objectReference: {fileID: 0}
+    - target: {fileID: 2065712721823111568, guid: 6a1aa74e1607a484eb72539b1ef7e814, type: 3}
+      propertyPath: m_TagString
+      value: Growth Surface
       objectReference: {fileID: 0}
     - target: {fileID: 2198233617556393137, guid: 6a1aa74e1607a484eb72539b1ef7e814, type: 3}
       propertyPath: m_RootOrder

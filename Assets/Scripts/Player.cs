@@ -26,8 +26,8 @@ public class Player : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
 
-        if(wateringCan != null) {
-        wateringCan.localRotation = transform.localRotation;
+        if(wateringCan != null) { 
+            wateringCan.localRotation = transform.localRotation;
         }
         
         playerBody.Rotate(Vector3.up * mouseX);

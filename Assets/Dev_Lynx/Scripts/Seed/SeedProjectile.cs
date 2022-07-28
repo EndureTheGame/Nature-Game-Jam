@@ -8,11 +8,11 @@ public class SeedProjectile : MonoBehaviour
 
         [Header("Projectile Variable Fields - Seed")]
         [SerializeField] GameObject plantToGrow;
-        [SerializeField] int dirtLayer;
+        [SerializeField] private string growthAreaTag;
 
         Rigidbody rb;
         Quaternion spawnRotation;
-        int currentLayer;
+        private Collision col;
 
         #endregion
 
@@ -27,7 +27,7 @@ public class SeedProjectile : MonoBehaviour
             if(collision.gameObject.CompareTag("Growth Surface")) {
                 rb.isKinematic = true;
                 spawnRotation = Quaternion.LookRotation(collision.contacts[0].normal);
-                currentLayer = collision.gameObject.layer;
+                col = collision;
             }
         }
 
@@ -40,8 +40,8 @@ public class SeedProjectile : MonoBehaviour
         #region Public Methods
 
         public void GrowPlant() {
-            if(plantToGrow != null && currentLayer == dirtLayer){
-            GameObject plantPrefab = Instantiate(plantToGrow, transform.position, spawnRotation) as GameObject;
+            if(plantToGrow != null && col.gameObject.CompareTag(growthAreaTag)){
+                Instantiate(plantToGrow, transform.position, spawnRotation);
             }
             Destroy(gameObject);
         }
