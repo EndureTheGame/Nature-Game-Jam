@@ -26,8 +26,6 @@ public class PlayerHealth : MonoBehaviour
                 hearts[i].sprite = heartImage;
                 hearts[i].color = Color.white;
             }
-
-            
         }
 
         #endregion

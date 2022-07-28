@@ -7,6 +7,9 @@ TagManager:
   - Growth Surface
   - Key
   - Heart
+  - Ground
+  - JumpPad
+  - Enemy
   layers:
   - Default
   - TransparentFX

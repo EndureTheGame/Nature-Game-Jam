@@ -164,25 +164,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2096285299}
     m_Modifications:
-    - target: {fileID: 3125269304789653745, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
-      propertyPath: m_Height
-      value: 1.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125269304789653745, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
-      propertyPath: m_Radius
-      value: 1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125269304789653745, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 3769010120839469340, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3769010120839469340, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.224817
+      value: -10.01
       objectReference: {fileID: 0}
     - target: {fileID: 3769010120839469340, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
       propertyPath: m_LocalPosition.y
@@ -190,7 +178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3769010120839469340, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.66003
+      value: 13.31
       objectReference: {fileID: 0}
     - target: {fileID: 3769010120839469340, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
       propertyPath: m_LocalRotation.w
@@ -221,17 +209,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3890712159588993178, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1811457699}
-    - target: {fileID: 3890712159588993178, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 227438138}
-    - target: {fileID: 3890712159588993178, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
-      propertyPath: whatIsPlayer.m_Bits
-      value: 384
-      objectReference: {fileID: 0}
     - target: {fileID: 4541288758985442214, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
       propertyPath: m_Name
       value: smoothfirelad (1)
@@ -816,7 +796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1570174590422160907, guid: 6a1aa74e1607a484eb72539b1ef7e814, type: 3}
       propertyPath: m_TagString
-      value: Growth Surface
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2065712721823111568, guid: 6a1aa74e1607a484eb72539b1ef7e814, type: 3}
       propertyPath: m_TagString
@@ -1246,11 +1226,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1096942449300920090, guid: 79adb9f93c66d904d8c19b495d612247, type: 3}
   m_PrefabInstance: {fileID: 1767650310}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &1811457699 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 3125269304789653745, guid: 2166c029289fb634e9f18f626a06a330, type: 3}
-  m_PrefabInstance: {fileID: 165594680}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1968596567 stripped
 MonoBehaviour:

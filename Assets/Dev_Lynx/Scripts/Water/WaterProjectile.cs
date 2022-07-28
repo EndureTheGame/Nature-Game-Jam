@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,18 +10,27 @@ public class WaterProjectile : MonoBehaviour
         [SerializeField] float projectileSpeed;
         [SerializeField] float projectileRadius;
         [SerializeField] UnityEvent OnImpact;
+        [SerializeField] private float projectileDamage;
 
         Rigidbody rb;
 
         #endregion
 
         #region MonoBehaviour Callbacks
+
         void OnCollisionEnter(Collision collision) {
             if(collision.gameObject.CompareTag("Growth Surface")) {
                 WaterExplosion();
             }
-            
-        } 
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                other.gameObject.GetComponent<EnemyAi>().TakeDamage(projectileDamage);
+            }
+        }
 
         #endregion
 

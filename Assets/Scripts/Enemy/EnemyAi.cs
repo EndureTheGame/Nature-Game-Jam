@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -88,23 +89,25 @@ public class EnemyAi : MonoBehaviour
             ///End of attack code
 
             alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            StartCoroutine(ResetAttack());
         }
     }
-    private void ResetAttack()
+
+    private IEnumerator ResetAttack()
     {
-        alreadyAttacked = false;
+        while (alreadyAttacked)
+        {
+            yield return new WaitForSeconds(timeBetweenAttacks);
+
+            alreadyAttacked = false;
+        }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
 
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
+        if (health <= 0) Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()
