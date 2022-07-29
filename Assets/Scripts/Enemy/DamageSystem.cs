@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageSystem : MonoBehaviour
 {
     public float health;
+    public UiHealthHandler hpUI;
 
     public void Start()
     {
@@ -14,6 +15,7 @@ public class DamageSystem : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        
         if (health <= 0)
         { 
             FindObjectOfType<GameManager>().GameOver();    

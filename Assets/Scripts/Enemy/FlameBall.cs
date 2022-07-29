@@ -26,7 +26,7 @@ public class FlameBall : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<DamageSystem>().TakeDamage(25);
         }

@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
         [Header("Player Health Variable Fields")]
         [SerializeField] Image[] hearts;
         [SerializeField] Sprite heartImage;
+        [SerializeField] private UiHealthHandler hpUI;
         public int maxHealth = 3;
 
 
