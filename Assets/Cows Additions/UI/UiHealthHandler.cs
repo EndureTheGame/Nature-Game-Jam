@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class UiHealthHandler : MonoBehaviour
@@ -11,8 +10,16 @@ public class UiHealthHandler : MonoBehaviour
 
     public void RemoveHeart()
     {
-        hp--;
-        
+        switch (hp)
+        {
+            case <= 0:
+                hp = 0;
+                break;
+            case > 0:
+                hp--;
+                break;
+        }
+
         switch (hp)
         {
             case 2:
@@ -29,8 +36,16 @@ public class UiHealthHandler : MonoBehaviour
 
     public void AddHeart()
     {
-        hp++;
-        
+        switch (hp)
+        {
+            case >= 3:
+                hp = 3;
+                break;
+            case < 3:
+                hp++;
+                break;
+        }
+
         switch (hp)
         {
             case 1:

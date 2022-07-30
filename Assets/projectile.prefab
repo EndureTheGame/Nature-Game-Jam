@@ -58,7 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cafb826c5ea0d469aeab98d8e7f04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiHp: {fileID: 0}
 --- !u!1 &8594797159103473302
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3d1e78a73dc064ebb01fc66535d776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damamge: 50
+  damamge: 1
   player: {fileID: 638650356250733968, guid: 2c04706acc4850b4bbe3c9f4c2462c42, type: 3}
   TimeLeft: 100
 --- !u!135 &7433176523609959707

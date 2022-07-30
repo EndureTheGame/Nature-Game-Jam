@@ -1,29 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DamageSystem : MonoBehaviour
 {
     public float health;
-    public UiHealthHandler hpUI;
 
-    public void Start()
+    public void Awake()
     {
-        health = 200.0f;  
+        health = 3f;  
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage()
     {
-        health -= damage;
+        health -= 1;
         
         if (health <= 0)
         { 
             FindObjectOfType<GameManager>().GameOver();    
         }
     }
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
-    }
 
+    public void AddHealth()
+    {
+        switch (health)
+        {
+            case >= 3:
+                health = 3;
+                break;
+            case < 3:
+                health += 1;
+                break;
+        }
+    }
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FlameBall : MonoBehaviour
 {
-    
-    public int damamge = 25;
     private DamageSystem damageSystem;
     public GameObject player;
     public float TimeLeft = 50;
@@ -19,7 +17,7 @@ public class FlameBall : MonoBehaviour
         }
     }
 
-    public void Start()
+    public void Awake()
     {
         damageSystem = player.GetComponent<DamageSystem>();
     }
@@ -28,7 +26,8 @@ public class FlameBall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<DamageSystem>().TakeDamage(25);
+            collision.gameObject.GetComponent<DamageSystem>().TakeDamage();
+            Destroy(gameObject); 
         }
         else 
         { 

@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: d6296fa8a03f8eb4aae85bd43b5cafb2
+guid: 115a9b840145bfd4ca0cd230a6bad0bd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - heartImage: {fileID: 21300000, guid: 728064b2d146da24db7e2187295ae8e4, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
